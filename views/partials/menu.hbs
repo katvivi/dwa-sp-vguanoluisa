@@ -4,17 +4,17 @@
             <h2 class="text-centro">Nuestro Menu</h2>
             <div class="menu-comidas-item">
             
-                {{#each platos}}
+                {{#each helados}}
                     <div class="img-plato">
                         <img
                             class="img-responsive img-redondeado"
-                            src="images/{{this.name}}.jpg"
+                            src="imagenes/{{this.name}}.png"
                             alt={{this.name}}
                         />
                     </div>
                     <div class="desc-plato-menu">
                         <h4>{{this.name}}</h4>
-                        <p class="precio-plato">${{this.price}}</p>
+                        <p class="precio-plato">{{this.price}}</p>
                         <p class="desc-plato">{{this.description}}</p>
                         <a href="#" class="btn btn-principal">Ordenar</a>
                     </div>

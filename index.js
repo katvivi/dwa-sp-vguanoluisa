@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 const publicPath = path.resolve(__dirname, 'public');
 const hbs = require('hbs');
-const platos = require("./hbs/helpers")
+const helados = require("./hbs/helpers")
 
 // Para que los archivos estaticos queden disponibles.
 app.use(express.static(publicPath));
@@ -20,11 +20,11 @@ app.get("/", (req,res)=>{
         nombre:"Vivs",
         anio: new Date().getFullYear(),
         categoria: [
-            "Pizza",
-            "Burger",
-            "Empanada",
+            "Helados",
+            "Frutas",
+            "Tulipan",
         ],
-        platos
+        helados
         }
     );
 })
