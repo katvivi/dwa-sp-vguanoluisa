@@ -29,8 +29,15 @@ app.get("/", (req,res)=>{
     );
 })
 
-app.listen(3000, ()=>{
+/*app.listen(3000, ()=>{
     console.log("Server listening on port", 3000);
+});*/
+
+//port
+const port = process.env.PORT || 3000;
+//server
+const server = app.listen(port, () => {
+	console.log(`Servidor corriendo en http://localhost:${port}`);
 });
 
 
