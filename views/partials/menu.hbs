@@ -1,0 +1,25 @@
+<!--Inicio de la seccion Menu comidas-->
+    <section class="menu-comidas"> 
+        <div class="contenedor">
+            <h2 class="text-centro">Nuestro Menu</h2>
+            <div class="menu-comidas-item">
+            
+                {{#each platos}}
+                    <div class="img-plato">
+                        <img
+                            class="img-responsive img-redondeado"
+                            src="images/{{this.name}}.jpg"
+                            alt={{this.name}}
+                        />
+                    </div>
+                    <div class="desc-plato-menu">
+                        <h4>{{this.name}}</h4>
+                        <p class="precio-plato">${{this.price}}</p>
+                        <p class="desc-plato">{{this.description}}</p>
+                        <a href="#" class="btn btn-principal">Ordenar</a>
+                    </div>
+                    <div class="Limpiar"></div>
+                {{/each}}
+        </div>
+    </section>    
+    <!--Fin de la seccion menu comidas-->
